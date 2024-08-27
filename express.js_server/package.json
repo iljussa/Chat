@@ -4,8 +4,10 @@
   "description": "BNTA fullstack project",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index",
-    "start": "nodemon index.js"
+    "server": "nodemon index.js",
+    "start": "nodemon ",
+    "start:dev": "concurrently \"npm run start\" \"npm run start\""
+
   },
   "author": "",
   "license": "ISC",

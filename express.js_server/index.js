@@ -5,7 +5,7 @@ const http = require("http");
 const cors = require("cors");
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/chatapp'); //connect to db
+mongoose.connect('mongodb+srv://admin:admin@todo.ebsqi.mongodb.net/?retryWrites=true&w=majority&appName=Todo'); //connect to db
 const db = mongoose.connection;
 db.on('error', (error)=> console.error(error));
 db.once('open', () => console.log('Connected to database'));
